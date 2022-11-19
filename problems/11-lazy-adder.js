@@ -22,7 +22,16 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   fat-arrow function
 ***********************************************************************/
 
-// your code here
+const lazyAdder = firstNum => {
+  let sum = firstNum;
+  return secondNum => {
+    sum += secondNum;
+    return thirdNum => {
+      sum += thirdNum;
+      return sum;
+    }
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

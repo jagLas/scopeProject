@@ -24,7 +24,19 @@ console.log(table2(75)); // STILL prints 6
 
 ***********************************************************************/
 
-// your code here
+const recVolume = height => {
+  let width = 0;
+  let depth = 0;
+  return measure =>{
+    if (width === 0){
+      width = measure;
+    } else if (depth === 0) {
+      depth = measure;
+    }
+      return height * width * depth;
+    
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
